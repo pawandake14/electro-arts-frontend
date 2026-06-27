@@ -178,7 +178,7 @@ const Footer = () => {
           <p className="text-sm text-slate-500">
             Designed & Developed by{" "}
             <a
-              href="https://your-portfolio-link.com"
+              href="https://my-portfolio-pawan-dake.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan-500 hover:text-cyan-400 font-medium transition-colors"
