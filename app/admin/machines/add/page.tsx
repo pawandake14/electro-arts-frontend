@@ -77,17 +77,26 @@ export default function AddMachine() {
 
       <main className="flex-1 md:ml-64 flex flex-col h-screen overflow-hidden w-full">
         <header className="bg-white border-b border-slate-200 h-16 flex items-center px-4 md:px-8 flex-shrink-0 z-10">
-          <div className="flex items-center gap-2 text-sm">
-            <Link
-              href="/admin/dashboard"
-              className="text-slate-500 hover:text-slate-800"
+          <div className="flex items-center text-sm font-medium text-slate-500">
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              className="md:hidden mr-4 text-slate-500 hover:text-slate-800 "
             >
-              Dashboard
-            </Link>
-            <span className="text-slate-400">&gt;</span>
-            <span className="text-slate-500">Machines</span>
-            <span className="text-slate-400">&gt;</span>
-            <span className="text-slate-900 font-medium">Add Machine</span>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+            Machines &gt; <span className="text-slate-900">Add Machines</span>
           </div>
         </header>
 

@@ -60,7 +60,7 @@ export default function ManagerDashboard() {
 
         // 2. Fetch Complaints
         const ticketsRes = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/tickets/all`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/tickets`,
           { headers },
         );
         const activeComplaints = ticketsRes.data.filter(

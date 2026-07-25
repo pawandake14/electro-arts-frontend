@@ -11,12 +11,6 @@ export default function AboutUs() {
           {/* Left Text */}
           <div className="w-full lg:w-1/2 lg:pr-12">
             <FadeIn direction="up">
-              <div className="text-sm text-slate-500 mb-6 font-medium">
-                <Link href="/" className="hover:text-[#111f38]">
-                  Home
-                </Link>{" "}
-                <span className="mx-2">&gt;</span> About Us
-              </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-[#111f38] mb-4">
                 About Us
               </h1>

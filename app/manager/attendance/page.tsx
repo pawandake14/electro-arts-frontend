@@ -76,10 +76,25 @@ export default function TrackAttendance() {
     return matchesSearch && matchesRole && matchesStatus;
   });
 
-  const getHealthScore = (id: string) => {
-    if (!id) return 95;
-    const charCode = id.charCodeAt(id.length - 1);
-    return 80 + (charCode % 21);
+  // Replace the old getHealthScore with this one!
+  const getHealthScore = (record: any) => {
+    // 1. Try to use real data if your backend provides it
+    if (record.totalMonthDays > 0 && record.presentDays !== undefined) {
+      return Math.round((record.presentDays / record.totalMonthDays) * 100);
+    }
+
+    // 2. Smart Fallback for Presentation Demo
+    // Generates a stable base score, but reacts logically to today's status
+    const charCode = record._id
+      ? record._id.charCodeAt(record._id.length - 1)
+      : 0;
+    let baseScore = 80 + (charCode % 15); // Generates a base between 80-94
+
+    if (record.status === "Present") {
+      baseScore += 6; // Boost the score if they showed up today!
+    }
+
+    return Math.min(baseScore, 100); // Ensures it never goes over 100%
   };
 
   // --- REAL DATA FETCHING FOR MODAL ---
@@ -481,7 +496,7 @@ export default function TrackAttendance() {
                     </tr>
                   ) : (
                     filteredRecords.map((record) => {
-                      const healthScore = getHealthScore(record._id);
+                      const healthScore = getHealthScore(record);
                       return (
                         <tr
                           key={record._id}

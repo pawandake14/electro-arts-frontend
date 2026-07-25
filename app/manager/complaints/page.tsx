@@ -24,7 +24,7 @@ export default function ManagerComplaints() {
         const token = localStorage.getItem("token");
         // Fetching all tickets anonymously (no user data is attached from backend)
         const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/tickets/all`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/tickets`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },

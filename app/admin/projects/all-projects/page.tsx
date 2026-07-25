@@ -73,7 +73,7 @@ export default function AllProjects() {
       <main className="flex-1 md:ml-64 flex flex-col h-screen overflow-hidden w-full">
         {/* Top Navbar */}
         <header className="bg-white border-b border-slate-200 h-16 flex items-center justify-between px-4 md:px-8 flex-shrink-0 z-10">
-          <div className="flex items-center">
+          <div className="flex items-center text-sm font-medium text-slate-500">
             <button
               onClick={() => setIsSidebarOpen(true)}
               className="md:hidden mr-4 text-slate-500 hover:text-slate-800"
@@ -92,17 +92,9 @@ export default function AllProjects() {
                 ></path>
               </svg>
             </button>
-            <div className="flex items-center gap-2 text-sm">
-              <Link
-                href="/admin/dashboard"
-                className="text-slate-500 hover:text-slate-800 transition-colors"
-              >
-                Dashboard
-              </Link>
-              <span className="text-slate-400">&gt;</span>
-              <span className="text-slate-900 font-medium">Projects</span>
-            </div>
+            Projects &gt; <span className="text-slate-900">All Projects</span>
           </div>
+
           <Link
             href="/admin/projects/add"
             className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-lg transition-colors shadow-sm flex items-center gap-2"

@@ -96,13 +96,6 @@ export default function AddProduct() {
               </svg>
             </button>
             <div className="flex items-center gap-2 text-sm">
-              <Link
-                href="/admin/dashboard"
-                className="text-slate-500 hover:text-slate-800 transition-colors"
-              >
-                Dashboard
-              </Link>
-              <span className="text-slate-400">&gt;</span>
               <span className="text-slate-500">Products</span>
               <span className="text-slate-400">&gt;</span>
               <span className="text-slate-900 font-medium">Add Product</span>

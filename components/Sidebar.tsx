@@ -214,9 +214,10 @@ export default function Sidebar({
               Attendance
             </p>
             <div className="space-y-1">
+              {/* 🔥 FIXED: Now perfectly matches your 'records' folder! 🔥 */}
               <Link
                 href="/admin/records"
-                className={getLinkClass("/admin/attendance-records")}
+                className={getLinkClass("/admin/records")}
               >
                 <svg
                   className="w-4 h-4"

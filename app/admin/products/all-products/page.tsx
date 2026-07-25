@@ -93,10 +93,10 @@ export default function AllProducts() {
                 href="/admin/dashboard"
                 className="text-slate-500 hover:text-slate-800 transition-colors"
               >
-                Dashboard
+                Products
               </Link>
               <span className="text-slate-400">&gt;</span>
-              <span className="text-slate-900 font-medium">Products</span>
+              <span className="text-slate-900 font-medium">All Products</span>
             </div>
           </div>
           <Link

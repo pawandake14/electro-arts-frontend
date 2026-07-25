@@ -29,7 +29,7 @@ export default function EmployeesList() {
       setLoading(true);
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        "${process.env.NEXT_PUBLIC_API_URL}/api/admin/users?role=Employee",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin/users?role=Employee`,
         {
           headers: { Authorization: `Bearer ${token}` },
         },

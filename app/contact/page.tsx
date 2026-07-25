@@ -79,13 +79,8 @@ export default function ContactUs() {
                         Our Location
                       </h4>
                       <p className="text-sm text-slate-600 leading-relaxed">
-                        Electro Arts Automation Pvt. Ltd.
-                        <br />
-                        Plot No. 123, Industrial Area,
-                        <br />
-                        Phase 2, Chakan, Pune - 410501,
-                        <br />
-                        Maharashtra, India
+                        Plot No. B-15/2/7 MIDC <br /> Industrial Area Waluj
+                        Chhatrapati <br /> Sambhaji Nagar {"\u2013"} 431 136.
                       </p>
                     </div>
                   </div>
@@ -109,11 +104,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h4 className="font-bold text-[#111f38] mb-1">Phone</h4>
-                      <p className="text-sm text-slate-600">
-                        +91 98765 43210
-                        <br />
-                        +91 20 1234 5678
-                      </p>
+                      <p className="text-sm text-slate-600">+91 99239 75227</p>
                     </div>
                   </div>
 
@@ -137,9 +128,9 @@ export default function ContactUs() {
                     <div>
                       <h4 className="font-bold text-[#111f38] mb-1">Email</h4>
                       <p className="text-sm text-slate-600">
-                        info@electroarts.in
+                        electroarts.inc@gmail.com
                         <br />
-                        support@electroarts.in
+                        sales@electroartsinc.co.in
                       </p>
                     </div>
                   </div>
@@ -179,7 +170,7 @@ export default function ContactUs() {
                 {/* Live Google Map Embed */}
                 <div className="w-full h-[200px] rounded-xl mb-6 overflow-hidden shadow-inner border border-slate-300">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d269.45527339973745!2d75.23343889374361!3d19.831889662088297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1780735275520!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d501.85038670123987!2d75.23246480157279!3d19.83173773971955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9b50b41e9fc3%3A0x75d05707e33f535c!2sElectro%20Arts!5e1!3m2!1sen!2sin!4v1783007526708!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -187,36 +178,6 @@ export default function ContactUs() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
-                </div>
-
-                {/* Assistance Box */}
-                <div className="bg-slate-100 rounded-xl p-5 flex items-center gap-4 border border-slate-200">
-                  <div className="text-[#111f38]">
-                    <svg
-                      className="w-8 h-8"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div className="flex-grow">
-                    <h5 className="font-bold text-sm text-[#111f38]">
-                      Need Immediate Assistance?
-                    </h5>
-                    <p className="text-xs text-slate-500">
-                      Our support team is available 24/7.
-                    </p>
-                  </div>
-                  <button className="bg-[#111f38] hover:bg-cyan-600 text-white text-xs font-semibold px-4 py-2 rounded transition-colors whitespace-nowrap shadow-sm">
-                    Contact Support
-                  </button>
                 </div>
               </FadeIn>
             </div>
@@ -311,36 +272,6 @@ export default function ContactUs() {
                         className="w-full rounded-md border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-shadow bg-slate-50 focus:bg-white resize-none"
                         required
                       ></textarea>
-                    </div>
-
-                    {/* Checkbox */}
-                    <div className="flex items-center gap-3">
-                      <input
-                        type="checkbox"
-                        id="privacy"
-                        className="w-4 h-4 text-[#111f38] border-slate-300 rounded focus:ring-cyan-500 cursor-pointer"
-                        required
-                      />
-                      <label
-                        htmlFor="privacy"
-                        className="text-sm text-slate-600 cursor-pointer"
-                      >
-                        I agree to the{" "}
-                        <Link
-                          href="/privacy"
-                          className="text-cyan-600 hover:underline"
-                        >
-                          Privacy Policy
-                        </Link>{" "}
-                        and{" "}
-                        <Link
-                          href="/terms"
-                          className="text-cyan-600 hover:underline"
-                        >
-                          Terms & Conditions
-                        </Link>
-                        .
-                      </label>
                     </div>
 
                     {/* Submit Button */}

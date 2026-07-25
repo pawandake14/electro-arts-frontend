@@ -77,7 +77,7 @@ export default function LoginPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   // Added placeholder:text-slate-400 and text-slate-900
                   className="w-full mt-1 px-4 py-3 rounded-md border border-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 placeholder:text-slate-400 text-slate-900"
-                  placeholder="admin@electroarts.in"
+                  placeholder="xyz@electroarts.in"
                 />
               </div>
               <div>
