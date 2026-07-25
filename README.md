@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# ⚡ Electro Arts Frontend
 
-First, run the development server:
+A modern and responsive frontend for the **Electro Arts** industrial automation platform, built with **Next.js** and **TypeScript**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-blue?style=for-the-badge)](https://electro-arts.vercel.app/)
+
+</div>
+
+---
+
+## 📌 Overview
+
+The Electro Arts Frontend is designed to provide a fast, modern, and user-friendly experience for customers, employees, and administrators. It features responsive layouts, optimized performance, and a clean interface for exploring company information, products, careers, and services.
+
+---
+
+## ✨ Key Features
+
+- 🏢 Company Information Pages
+- 📦 Products & Solutions Showcase
+- 💼 Careers & Job Vacancies
+- 👨‍💼 Admin Dashboard
+- 👷 Employee Portal
+- 🧑‍💼 Manager Dashboard
+- 🛎️ Reception Module
+- 🔐 Secure Login System
+- 📱 Fully Responsive Design
+- ⚡ Fast Performance with Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| UI | shadcn/ui |
+| Icons | Lucide React |
+| Animations | Framer Motion |
+| Deployment | Vercel |
+
+---
+
+# 📸 Screenshots
+
+### 🏠 Home Page
+
+<p align="center">
+<img src="images/home.png" width="90%">
+</p>
+
+---
+
+### 🏢 About Page
+
+<p align="center">
+<img src="images/about.png" width="90%">
+</p>
+
+---
+
+### 💼 Careers
+
+<p align="center">
+<img src="images/careers.png" width="90%">
+</p>
+
+---
+
+### 📞 Contact Page
+
+<p align="center">
+<img src="images/contact.png" width="90%">
+</p>
+
+---
+## 📂 Project Structure
+
+```text
+electro-arts-frontend/
+│
+├── app/
+│   ├── about-us/
+│   ├── admin/
+│   ├── careers/
+│   ├── contact/
+│   ├── employee/
+│   ├── login/
+│   ├── manager/
+│   ├── products/
+│   ├── projects/
+│   ├── reception/
+│   ├── solutions/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+├── public/
+│
+├── .env.local
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── postcss.config.mjs
+└── next.config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/pawandake14/electro-arts-frontend.git
 
-## Learn More
+cd electro-arts-frontend
 
-To learn more about Next.js, take a look at the following resources:
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Live Website
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 **https://electro-arts.vercel.app/**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Author
+
+**Pawan Kishorkumar Dake**
+
+Full Stack Developer
+
+GitHub: https://github.com/pawandake14
+
+---
+
+<div align="center">
+
+⭐ If you like this project, consider giving it a star!
+
+</div>
